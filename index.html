@@ -7,7 +7,9 @@
 <body>
 <header>
   <div>
-    <img src="https://via.placeholder.com/150x100" alt="техномарт">
+    <a>
+      <img src="https://via.placeholder.com/150x100" alt="техномарт">
+    </a>
     <form>
       <input id="search" type="search" name="search" placeholder="Поиск:">
       <label for="search"></label>
@@ -26,10 +28,8 @@
   <div>
     <a href="tel:+78125550555">+7 (812) 555-05-55</a>
     <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-    <ul>
-      <li><a href="#">войти</a></li>
-      <li><a href="#">регистрация</a></li>
-    </ul>
+    <a href="#">войти</a>
+    <a href="#">регистрация</a>
   </div>
   <nav>
     <ul>
@@ -72,17 +72,19 @@
     <div>
       <h2>Популярные товары:</h2>
       <p>
-        <button type="button">все популярные товары</button>
+        <button>все популярные товары</button>
       </p>
     </div>
     <article>
-      <img src="https://via.placeholder.com/150x100" alt="Перфоратор BOSH BFG 9000">
-      <h3>Перфоратор BOSCH BFG 9000</h3>
-      <span>32500 Р.</span>
-      <span>25500 Р.</span>
       <div>
-        <a href="#">купить</a>
-        <a href="#">в закладки</a>
+        <img src="https://via.placeholder.com/150x100" alt="Перфоратор BOSH BFG 9000">
+        <h3>Перфоратор BOSCH BFG 9000</h3>
+        <span>32500 Р.</span>
+        <span>25500 Р.</span>
+        <ul>
+          <li><a href="#">купить</a></li>
+          <li><a href="#">в закладки</a></li>
+        </ul>
       </div>
     </article>
     <article>
@@ -121,7 +123,7 @@
   <section>
     <h2>Популярные производители:</h2>
     <p>
-      <button type="button">все производители</button>
+      <button>все производители</button>
     </p>
     <div>
       <ul>
@@ -167,12 +169,12 @@
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными
           компаниями:</p>
         <ul>
-          <li><a href="#">Деловые линии</a></li>
-          <li><a href="#">Автотрейдинг</a></li>
-          <li><a href="#">ЖелДорЭкспедиция</a></li>
+          <li><p>Деловые линии</p></li>
+          <li><p>Автотрейдинг</p></li>
+          <li><p>ЖелДорЭкспедиция</p></li>
         </ul>
         <p>
-          <button type="button">подробнее о компании</button>
+          <button>подробнее о компании</button>
         </p>
       </div>
       <div>
@@ -180,9 +182,7 @@
         <p>Вы можете забрать товар сами,</p>
         <p>заехав в наш офис:</p>
         <a href="#"><img src="https://via.placeholder.com/150x100" alt="карта"></a>
-        <p>
-          <button type="button">Заблудились? Напишите нам!</button>
-        </p>
+        <a href="#">Заблудились? Напишите нам!</a>
       </div>
     </div>
   </section>
