@@ -45,9 +45,6 @@ img {
 
 /*Main header*/
 
-.page-body {
-}
-
 .main-header {
   background-color: var(--basic-light-light-blue);
 }
@@ -73,9 +70,6 @@ img {
   box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
 }
 
-.site-logo {
-}
-
 .header-phone {
   font-size: 21px;
   line-height: 30px;
@@ -87,9 +81,6 @@ img {
   font-size: 14px;
   line-height: 24px;
   color: var(--basic-mid-night)
-}
-
-.user-navigation {
 }
 
 .login-link {
@@ -121,7 +112,10 @@ img {
   list-style: none;
 }
 
-.site-navigation a,
+.site-navigation a {
+  color: var(--basic-white);
+}
+
 .top-header a {
   color: var(--basic-white);
 }
@@ -138,12 +132,18 @@ img {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.login-link:hover,
+.login-link:hover {
+  color: var(--basic-red);
+}
+
 .registration-link:hover {
   color: var(--basic-red);
 }
 
-.login-link:active,
+.login-link:active {
+  color: var(--basic-grey-light);
+}
+
 .registration-link:active {
   color: var(--basic-grey-light);
 }
@@ -160,14 +160,7 @@ img {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.container {
-}
-
 /*Features */
-
-.features {
-
-}
 
 .features-list {
   list-style: none;
@@ -263,12 +256,7 @@ img {
 }
 
 /*SLIDER CLOSE*/
-
 /*Goods*/
-
-.popular-goods {
-
-}
 
 .popular-goods-header h2 {
   font-size: 30px;
@@ -287,21 +275,31 @@ img {
   color: var(--basic-white);
 }
 
-.all-goods,
+.all-goods {
+  width: 192px;
+  height: 38px;
+  background-color: var(--basic-red);
+}
+
 .all-manufacturers {
   width: 192px;
   height: 38px;
   background-color: var(--basic-red);
 }
 
-.all-goods a,
+.all-goods a {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-white);
+}
+
 .all-manufacturers a {
   font-size: 14px;
   line-height: 18px;
   color: var(--basic-white);
 }
 
-/*.popular-goods-case {}*/
+/* popular-goods-case*/
 
 .old-price {
   text-decoration: line-through;
@@ -314,7 +312,6 @@ img {
   background-color: var(--basic-red);
   color: var(--basic-white);
 }
-
 
 .popular-goods-list h3 {
   font-family: "PT Sans", sans-serif;
@@ -334,9 +331,6 @@ img {
 
 /*Manufacturers*/
 
-.popular-manufacturers {
-}
-
 .manufacturers-header {
   background-color: var(--basic-line);
 }
@@ -348,10 +342,10 @@ img {
   font-weight: normal;
 }
 
-.all-manufacturers {
+.popular-goods-list {
+  list-style: none;
 }
 
-.popular-goods-list,
 .popular-manufacturers-list {
   list-style: none;
 }
