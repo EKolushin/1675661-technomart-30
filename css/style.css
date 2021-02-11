@@ -104,6 +104,12 @@ img {
   color: var(--basic-black)
 }
 
+.button-shop-menu {
+  width: 150px;
+  height: 42px;
+  background-color: var(--basic-grin);
+}
+
 .main-navigation {
   font-size: 18px;
   line-height: 24px;
@@ -348,19 +354,6 @@ img {
 .popular-goods-list,
 .popular-manufacturers-list {
   list-style: none;
-}
-
-.popular-manufacturers-list li {
-  width: 220px;
-  height: 145px;
-  text-align: center;
-  background: #FFFFFF;
-  border: 1px solid #EAEAEA;
-  box-sizing: border-box;
-}
-
-.popular-manufacturers-list img {
-  margin-top: 45px;
 }
 
 .all-manufacturers a {
