@@ -8,6 +8,8 @@
   <link rel="apple-touch-icon" href="favicon/152.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -56,21 +58,23 @@
 </header>
 <!--/Main header-->
 <main>
-  <div>
-    <ul>
-      <li><span>Главная</span></li>
+  <div class="catalog-container">
+    <ul class="bread-crumbs">
+      <li><a href="#"><img src="./img/icon-home.png" alt=""></a></li>
       <li><a href="#">каталог</a></li>
       <li><a href="#">инструмент</a></li>
-      <li><span>Перфораторы</span></li>
+      <li><a href="#" class="current-bread-crumbs">Перфораторы</a></li>
     </ul>
   </div>
   <section>
-    <h2>Перфораторы</h2>
-    <div>
-      <aside>
+    <div class="heading">
+    <h2 class="page-title-catalog">Перфораторы</h2>
+    </div>
+    <div class="container-filter">
+      <aside class="filter-item">
         <form>
-          <fieldset>
-            <legend>Фильтр:</legend>
+          <fieldset class="filter-list">
+            <legend class="filter">Фильтр:</legend>
             <div>Цена:</div>
             <label><input name="price" type="text" value="0"></label><span> &ndash;</span>
             <label><input name="price" type="text" value="30000"></label>
