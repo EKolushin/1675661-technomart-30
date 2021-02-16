@@ -610,7 +610,7 @@ img {
 }
 
 .line-price {
-
+  display: inline-block;
 }
 
 .filter-option {
