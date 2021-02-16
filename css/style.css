@@ -558,7 +558,7 @@ img {
   list-style: none;
 }
 
-/*catalog container*/
+/*Catalog container*/
 
 .catalog-container {
 
@@ -705,7 +705,7 @@ img {
 }
 
 .prise-catalog {
-  width:240px;
+  width: 240px;
   font-family: PTSans, sans-serif;
   font-style: normal;
   font-stretch: normal;
@@ -724,7 +724,7 @@ img {
 }
 
 .catalog-description {
-  background-color:#f4f7f9;
+  background-color: #f4f7f9;
 }
 
 .description-text {
