@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
@@ -12,7 +13,9 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
 <!--Main header-->
+
 <header class="main-header">
   <div class="top-header">
     <div class="logo">
@@ -33,12 +36,13 @@
   <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
   <a class="header-phone" href="tel:+78125550555"><img src="img/icon-phone.png" alt="Телефон"> +7 (812) 555-05-55</a>
   <address><p class="adds">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p></address>
-  <div class="user-navigation">
-    <a class="login-link" href="#">Войти</a>
-    <a class="registration-link" href="#">Регистрация</a>
-  </div>
+  <button><a class="button-login" href="#">Войти</a></button>
+  <button><a class="button-registration" href="#">Регистрация</a></button>
+
+  <!--/Main navigation-->
+
   <nav class="main-navigation">
-    <ul class="site-navigation">
+    <ul class="main-navigation-list">
       <li><a href="index.html">Главная</a></li>
       <li><a href="#">Компания</a></li>
       <li><a href="catalog.html">Каталог</a></li>
@@ -50,56 +54,66 @@
   </nav>
 </header>
 <!--/Main header-->
+
+<!--Category-->
 <main>
-  <!--Features-->
   <section>
-    <h2>Категории товаров</h2>
-    <ul class="features-list">
-      <li class="features-item1">
+    <h2></h2>
+    <ul class="category-list">
+      <li>
+        <div class="category-materials">
         <h3>Материалы</h3>
         <img src="img/icon-1.svg" width="44" height="65" alt="Материалы">
         <a href="#">НА ЛЮБОЙ ВКУС</a>
         <span class="new">NEW</span>
+        </div>
       </li>
-      <li class="features-item2">
+      <li>
+      <div class="category-tool">
         <h3>Инструмент</h3>
         <img src="img/icon-2.svg" width="75" height="61" alt="Инструмент">
         <a href="#">НА ВСЕ СЛУЧАИ</a>
+      </div>
       </li>
-      <li class="features-item3">
+      <li>
+      <div class="category-equipment">
         <h3>Техника</h3>
         <img src="img/icon-3.svg" width="78" height="62" alt="Техника">
         <a href="#">ДЛЯ СТРОЙКИ</a>
+      </div>
       </li>
-      <li class="features-item4">
+      <li>
+      <div class="category-perforators">
         <h3>Перфораторы</h3>
         <p>Настоящие мужские игрушки</p>
-        <div class="slider">
-          <a href="catalog.html">Открыть каталог</a>
-        </div>
+        <button class="button-slider"><a href="catalog.html">Открыть каталог</a></button>
+      </div>
       </li>
-      <li class="features-item5">
+      <li>
+      <div class="category-discounts">
         <h3>Скидки 50%</h3>
         <img src="img/icon-4.svg" width="59" height="72" alt="Скидки 50%">
         <a href="#">НА 350 ТОВАРОВ</a>
+      </div>
       </li>
-      <li class="features-item6">
+      <li>
+      <div class="category-delivery">
         <h3>Доставка</h3>
         <img src="img/icon-5.svg" width="78" height="63" alt="Доставка">
         <a href="#">БЕСПЛАТНО</a>
+      </div>
       </li>
     </ul>
   </section>
-  <!--/Features-->
-  <!--Goods-->
-  <section>
-    <div class="popular-goods-header">
+  <!--/Category-->
+
+  <!--Products-->
+  <section class="popular-products">
+    <div class="popular-products-header">
       <h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
-      <div class="all-goods">
-        <a class="button" href="#">все популярные товары</a>
-      </div>
+      <button class="popular-products-button"><a href="#">все популярные товары</a></button>
     </div>
-    <ul class="popular-goods-list">
+    <ul class="popular-products-list">
       <li>
         <h3>Перфоратор BOSCH BFG 9000</h3>
         <img src="img/perforator-bfg-9000.jpg" width="184" height="164" alt="Перфоратор BOSH BFG 9000">
@@ -128,17 +142,16 @@
       </li>
     </ul>
   </section>
-  <!--/Goods-->
-  <!--Fabricator-->
-  <section>
-    <div class="manufacturers-header">
+  <!--/Products-->
+
+  <!--Manufactures-->
+  <section class="popular-manufactures">
+    <div class="popular-manufactures-header">
       <h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
-      <div>
-        <a class="button" href="#">все производители</a>
-      </div>
+      <button class="popular-products-button"><a href="#">все производители</a></button>
     </div>
-    <div>
-      <ul class="popular-manufacturers-list">
+    <div class="popular-manufactures-list">
+      <ul>
         <li><a href="#"><img src="img/bosch.jpg" width="220" height="145" alt="bosch"></a></li>
         <li><a href="#"><img src="img/Makita.jpg" width="220" height="145" alt="makita"></a></li>
         <li><a href="#"><img src="img/DeWALT.jpg" width="220" height="145" alt="dewalt"></a></li>
@@ -150,7 +163,8 @@
       </ul>
     </div>
   </section>
-  <!--/Fabricator-->
+  <!--/Manufactures-->
+
   <!--Services-->
   <section class="services">
     <h2>СЕРВИСЫ</h2>
@@ -177,6 +191,7 @@
     </ul>
   </section>
   <!--/Services-->
+
   <!--Description-->
   <section class="description">
     <div class="description-wrapper">
@@ -198,8 +213,9 @@
       <a class="button" href="#">Заблудились? Напишите нам!</a>
     </div>
   </section>
-  <!--/Description-->
 </main>
+<!--/Description-->
+
 <!--Footer-->
 <footer class="footer-main">
   <div>
