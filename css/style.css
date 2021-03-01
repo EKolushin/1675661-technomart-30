@@ -43,32 +43,32 @@ img {
 
 /*Main header*/
 
-.main-header {
+.header {
   background-color: var(--basic-light-light-blue);
 }
 
-.main-header h1 {
+.header h1 {
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
   color: var(--basic-red);
 }
 
-.main-top-header {
+.header-top {
   font-size: 18px;
   line-height: 24px;
   background-color: var(--basic-dark-blu);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.main-top-header-logo {
+.header-top-logo {
   width: 220px;
   height: 47px;
   background-color: var(--basic-red);
   box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
 }
 
-.main-top-header a {
+.header-top a {
   color: var(--basic-white);
 }
 
@@ -97,8 +97,8 @@ img {
   color: var(--basic-mid-night)
 }
 
-.button-login,
-.button-registration {
+.header-link-login,
+.header-link-registration {
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black)
@@ -147,14 +147,14 @@ a,
   color: var(--basic-white);
 }
 
-.category-list a {
+.category-link-item {
   font-size: 14px;
   line-height: 18px;
   background-color: rgba(255, 255, 255, 0.3);
   color: var(--basic-white);
 }
 
-.category-list a:active {
+.category-link-item:active {
   background-color: #A9A9A9;
   opacity: 0.3;
 }
@@ -196,28 +196,18 @@ span, .new {
   background-color: var(--basic-category-delivery);
 }
 
-/*SLIDER*/
-
-.button-slider a {
-  background-color: inherit;
-  color: var(--basic-white)
-}
-
-/*SLIDER CLOSE*/
 
 /*Products*/
 
-.popular-products,
-.popular-manufactures,
-.popular-products ul,
-.popular-manufactures ul {
+.products,
+.manufactures,
+.products ul,
+.manufactures ul {
   list-style: none;
 }
 
-.popular-products-header,
-.popular-manufactures-header,
-.popular-manufactures-header h2,
-.popular-products-header h2 {
+.section-header,
+.section-header h2 {
   font-size: 30px;
   line-height: 30px;
   color: var(--basic-light-blue);
@@ -225,11 +215,10 @@ span, .new {
   background-color: var(--basic-line);
 }
 
-.button-slider,
-.popular-products-button,
-.popular-manufactures-button,
-.description-button,
-.contacts-button {
+.slider-link,
+.section-header-link,
+.description-link,
+.contacts-link {
   font-size: 14px;
   line-height: 18px;
   color: var(--basic-white);
@@ -250,7 +239,7 @@ span, .new {
   color: var(--basic-white);
 }
 
-.popular-products-list h3 {
+.products-list h3 {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -259,7 +248,7 @@ span, .new {
   color: var(--basic-black);
 }
 
-.popular-products-list span {
+.products-list span {
   font-family: "PT Sans", sans-serif;
   font-weight: bold;
   font-size: 17px;
@@ -267,20 +256,19 @@ span, .new {
 }
 
 /*Services*/
-.delivery,
 .services {
   background-color: var(--basic-light-light-blue);
 }
 
-.delivery-list,
-.services-list {
+.services-manage-list,
+.services-content-list {
   list-style: none;
   font-weight: normal;
   font-size: 21px;
   line-height: 30px;
 }
 
-.delivery-services-button {
+.services-link-delivery {
   width: 240px;
   height: 61px;
   border: 1px solid #EAEAEA;
@@ -289,7 +277,7 @@ span, .new {
   color: var(--basic-light-blue);
 }
 
-.button-services {
+.services-link {
   width: 240px;
   height: 61px;
   border: 1px solid #3e4f6b;
@@ -298,8 +286,8 @@ span, .new {
   background-color: var(--basic-light-blue);
 }
 
-.delivery-list p,
-.services-list p {
+.services p,
+.services-content-list p {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -313,7 +301,7 @@ span, .new {
   line-height: 30px;
 }
 
-.delivery h3 {
+.services-content-list h3 {
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
@@ -321,8 +309,12 @@ span, .new {
 }
 
 /*Description*/
+.description h2 {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+}
 
-.contacts p,
 .description p {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -331,16 +323,9 @@ span, .new {
   line-height: 24px;
 }
 
-.contacts h2,
-.description h2 {
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 30px;
-}
-
 /*Partner*/
 
-.description-list-partner {
+.description-partner-list {
   list-style: none;
   font-weight: normal;
   font-size: 18px;
@@ -354,31 +339,38 @@ span, .new {
   background-color: var(--basic-light-blue);
 }
 
-.address-header {
+.footer-logo {
+  width: 220px;
+  height: 68px;
+  background-color: var(--basic-red);
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.footer-address {
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-footer-address);
 }
 
-.tel {
+.footer-phone-link {
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-footer-address);
 }
 
-.footer-nav ul {
+.footer-navigation ul {
   list-style: none;
 }
 
-.footer-nav a {
+.footer-navigation a {
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-light-light-blue);
 }
 
-.footer-nav-additional a {
+.footer-navigation-category a {
   color: var(--basic-yelowe);
 }
 
@@ -389,14 +381,14 @@ span, .new {
   color: var(--basic-white);
 }
 
-.footer-social-link p {
+.footer-social-list p {
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-white);
 }
 
-.footer-social-link {
+.footer-social-list {
   background-color: var(--basic-dark-blu);
   list-style: none;
 }
@@ -409,7 +401,7 @@ span, .new {
   color: var(--basic-white);
 }
 
-.footer-social-link a {
+.footer-social-list a {
   color: var(--basic-yelowe);
 }
 
