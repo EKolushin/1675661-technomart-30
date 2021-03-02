@@ -113,7 +113,7 @@ img {
 }
 
 a,
-.header-main-navigation {
+.header-main-navigation-list {
   list-style: none;
   color: var(--basic-white);
 }
@@ -449,23 +449,35 @@ span, .new-mark {
   color: var(--basic-black)
 }
 
-.filter h2 {
+.perforator-background {
   font-family: Cuprum, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
-  text-transform: uppercase;
+  width: 940px;
   height: 89px;
+  text-transform: uppercase;
+  color: #32425C;
   background: var(--basic-light-light-blue);
 }
 
-.filter-form-title {
+.filters-form-title {
   background-color: #F7F3EC;
 }
 
-.filter {
+.filters {
+  text-transform: uppercase;
   background-color: #F7F3EC;
+}
+
+.filters-title {
+  font-family: PT Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
 }
 
 .minimally {
@@ -484,18 +496,7 @@ span, .new-mark {
   display: inline-block;
 }
 
-.filter-option {
-  list-style: none;
-  font-family: PTSans, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 19px;
-  text-transform: uppercase;
-  color: #000000;
-}
-
-.filter-form legend {
+.filters legend {
   font-family: PTSans, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -506,7 +507,19 @@ span, .new-mark {
   color: var(--basic-black);
 }
 
-.filter-show {
+.filters-option-list {
+  list-style: none;
+  font-family: PTSans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+
+.filters-show {
   font-family: PTSans, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -530,18 +543,22 @@ span, .new-mark {
   font-size: 13px;
   line-height: 18px;
   list-style: none;
+  text-transform: uppercase;
   background-color: #F7F3EC;
 }
 
 .catalog-sort-price {
+  text-transform: uppercase;
   color: #EE3643;
 }
 
 .catalog-sort-type {
+  text-transform: uppercase;
   color: var(--basic-black);
 }
 
 .catalog-sort-function {
+  text-transform: uppercase;
   color: var(--basic-black);
 }
 
