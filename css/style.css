@@ -80,7 +80,7 @@ img {
   background-color: #5fbb2d;
 }
 
-.top-header a:active {
+.header-top a:active {
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -91,7 +91,7 @@ img {
   color: var(--basic-red);
 }
 
-.address {
+.header-address {
   font-size: 14px;
   line-height: 24px;
   color: var(--basic-mid-night)
@@ -105,7 +105,7 @@ img {
 }
 
 /*Navigation*/
-.main-navigation {
+.header-main-navigation {
   font-size: 18px;
   line-height: 24px;
   background-color: var(--basic-light-blue);
@@ -113,20 +113,20 @@ img {
 }
 
 a,
-.main-navigation-list {
+.header-main-navigation-list {
   list-style: none;
   color: var(--basic-white);
 }
 
-.main-navigation li:hover {
+.header-main-navigation li:hover {
   background-color: var(--basic-dark-blu);
 }
 
-.main-navigation li:active {
+.header-main-navigation li:active {
   background-color: var(--basic-mid-night);
 }
 
-.main-navigation a:active {
+.header-main-navigation a:active {
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -159,40 +159,40 @@ a,
   opacity: 0.3;
 }
 
-.category-materials {
+.category-materials-item {
   background-color: var(--basic-category-materials);
 }
 
-span, .new {
+span, .new-mark {
   background-color: var(--basic-red);
 }
 
-.category-tool {
+.category-tool-item {
   background-color: var(--basic-category-tool);
 }
 
-.category-equipment {
+.category-equipment-item {
   background-color: var(--basic-category-equipment);
 }
 
-.category-perforators {
+.category-perforators-item {
   width: 620px;
   height: 266px;
   background: url(../img/perforator.jpg) no-repeat;
   background-size: 620px 266px;
 }
 
-.category-perforators p,
-.category-perforators h3 {
+.category-perforators-item p,
+.category-perforators-item h3 {
   text-align: initial;
   color: var(--basic-white);
 }
 
-.category-discounts {
+.category-discounts-item {
   background-color: var(--basic-category-discounts);
 }
 
-.category-delivery {
+.category-delivery-item {
   background-color: var(--basic-category-delivery);
 }
 
@@ -218,7 +218,7 @@ span, .new {
 .slider-link,
 .section-header-link,
 .description-link,
-.contacts-link {
+.description-contacts-link {
   font-size: 14px;
   line-height: 18px;
   color: var(--basic-white);
@@ -227,12 +227,16 @@ span, .new {
 
 /*Popular-products-case*/
 
-.old-price {
+.products-old-price {
+  text-align: center;
+  width: 141px;
+  height: 38px;
   text-decoration: line-through;
   color: var(--basic-dark-gray)
 }
 
-.new-price {
+.products-new-price {
+  text-align: center;
   width: 141px;
   height: 38px;
   background-color: var(--basic-red);
@@ -268,7 +272,7 @@ span, .new {
   line-height: 30px;
 }
 
-.services-link-delivery {
+.services-link-delivery-item {
   width: 240px;
   height: 61px;
   border: 1px solid #EAEAEA;
@@ -277,7 +281,7 @@ span, .new {
   color: var(--basic-light-blue);
 }
 
-.services-link {
+.services-link-item {
   width: 240px;
   height: 61px;
   border: 1px solid #3e4f6b;
@@ -381,8 +385,8 @@ span, .new {
   color: var(--basic-white);
 }
 
-.footer-social-list,
-.footer-social-list p {
+.footer-socials-list,
+.footer-socials-list p {
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
@@ -408,7 +412,7 @@ span, .new {
   color: var(--basic-yelowe);
 }
 
-.footer-social-item {
+.footer-socials-item {
   text-align: center;
   width: 44px;
   height: 44px;
@@ -416,7 +420,7 @@ span, .new {
   border-radius: 50px;
 }
 
-.footer-social-list img {
+.footer-socials-list img {
   margin-top: 13px;
 }
 
@@ -430,9 +434,9 @@ span, .new {
 
 /*Catalog container*/
 
-.bread-crumbs,
-.bread-crumbs a,
-.bread-crumbs-list {
+.breadcrumbs,
+.breadcrumbs a,
+.breadcrumbs-list {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
