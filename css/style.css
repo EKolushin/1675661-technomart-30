@@ -91,7 +91,7 @@ img {
   color: var(--basic-red);
 }
 
-.header-address {
+.address {
   font-size: 14px;
   line-height: 24px;
   color: var(--basic-mid-night)
@@ -113,7 +113,7 @@ img {
 }
 
 a,
-.header-main-navigation-list {
+.header-main-navigation {
   list-style: none;
   color: var(--basic-white);
 }
@@ -132,11 +132,8 @@ a,
 
 /*Category*/
 
-.category-list {
-  list-style: none;
-}
-
 .category-list li {
+  list-style: none;
   text-align: center;
 }
 
@@ -147,19 +144,19 @@ a,
   color: var(--basic-white);
 }
 
-.category-link-item {
+.category-link {
   font-size: 14px;
   line-height: 18px;
   background-color: rgba(255, 255, 255, 0.3);
   color: var(--basic-white);
 }
 
-.category-link-item:active {
+.category-link:hover {
   background-color: #A9A9A9;
   opacity: 0.3;
 }
 
-.category-materials-item {
+.category-materials {
   background-color: var(--basic-category-materials);
 }
 
@@ -167,32 +164,32 @@ span, .new-mark {
   background-color: var(--basic-red);
 }
 
-.category-tool-item {
+.category-tool {
   background-color: var(--basic-category-tool);
 }
 
-.category-equipment-item {
+.category-equipment {
   background-color: var(--basic-category-equipment);
 }
 
-.category-perforators-item {
+.category-perforators {
   width: 620px;
   height: 266px;
   background: url(../img/perforator.jpg) no-repeat;
   background-size: 620px 266px;
 }
 
-.category-perforators-item p,
-.category-perforators-item h3 {
+.category-perforators p,
+.category-perforators h3 {
   text-align: initial;
   color: var(--basic-white);
 }
 
-.category-discounts-item {
+.category-discounts {
   background-color: var(--basic-category-discounts);
 }
 
-.category-delivery-item {
+.category-delivery {
   background-color: var(--basic-category-delivery);
 }
 
@@ -215,7 +212,7 @@ span, .new-mark {
   background-color: var(--basic-line);
 }
 
-.slider-link,
+.category-perforators-link-item,
 .section-header-link,
 .description-link,
 .description-contacts-link {
@@ -264,15 +261,15 @@ span, .new-mark {
   background-color: var(--basic-light-light-blue);
 }
 
-.services-manage-list,
-.services-content-list {
+.services-manage-item,
+.services-content-item {
   list-style: none;
   font-weight: normal;
   font-size: 21px;
   line-height: 30px;
 }
 
-.services-link-delivery-item {
+.services-manage-button-active {
   width: 240px;
   height: 61px;
   border: 1px solid #EAEAEA;
@@ -281,7 +278,7 @@ span, .new-mark {
   color: var(--basic-light-blue);
 }
 
-.services-link-item {
+.services-manage-button {
   width: 240px;
   height: 61px;
   border: 1px solid #3e4f6b;
@@ -291,7 +288,7 @@ span, .new-mark {
 }
 
 .services p,
-.services-content-list p {
+.services-content-item p {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -305,7 +302,7 @@ span, .new-mark {
   line-height: 30px;
 }
 
-.services-content-list h3 {
+.services-content-item h3 {
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
@@ -314,6 +311,7 @@ span, .new-mark {
 
 /*Description*/
 .description h2 {
+  text-transform: uppercase;
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
@@ -329,11 +327,15 @@ span, .new-mark {
 
 /*Partner*/
 
-.description-partner-list {
+.description-partner-item {
   list-style: none;
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
+}
+
+.description-catalog {
+  background: var(--basic-light-light-blue);
 }
 
 
@@ -447,12 +449,18 @@ span, .new-mark {
   color: var(--basic-black)
 }
 
-.section-page-title {
+.filter h2 {
+  font-family: Cuprum, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
   height: 89px;
   background: var(--basic-light-light-blue);
 }
 
-.filter-list {
+.filter-form-title {
   background-color: #F7F3EC;
 }
 
@@ -487,7 +495,7 @@ span, .new-mark {
   color: #000000;
 }
 
-.filter-item legend {
+.filter-form legend {
   font-family: PTSans, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -548,11 +556,11 @@ span, .new-mark {
   color: var(--basic-black);
 }
 
-.prise-pagination {
+.products-pagination {
   list-style: none;
 }
 
-.prise-pagination a {
+.products-pagination a {
   font-family: PT Sans sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -567,7 +575,7 @@ span, .new-mark {
   border-radius: 2px;
 }
 
-.prise-pagination-active a {
+.products-pagination-active a {
   font-family: PT Sans sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -582,25 +590,3 @@ span, .new-mark {
   border-radius: 2px;
 }
 
-.catalog-description {
-  background-color: var(--basic-light-light-blue);
-}
-
-.description-heading {
-  font-family: Cuprum sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: var(--basic-black);
-}
-
-.description-text {
-  font-family: PTSans sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 24px;
-  color: var(--basic-black);
-}
