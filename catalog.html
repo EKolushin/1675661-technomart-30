@@ -31,7 +31,7 @@
   </div>
   <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
   <a class="header-phone" href="tel:+78125550555"><img src="img/icon-phone.png" alt="Телефон"> +7 (812) 555-05-55</a>
-  <address><p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p></address>
+  <address><p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p></address>
   <ul class="user-navigation-list">
     <li><a class="user-name-item" href="#"><img src="img/user.png" alt="Имя пользователя">Равшан Джамшутович</a></li>
     <li><a class="user-orders-item" href="#">Мои заказы</a></li>
@@ -50,6 +50,7 @@
   </nav>
 </header>
 <!--/Main header-->
+<!--Breadcrumbs-->
 <main>
   <section class="breadcrumbs">
     <ul class="breadcrumbs-list">
@@ -59,66 +60,76 @@
       <li>Перфораторы</li>
     </ul>
   </section>
-  <section class="filter">
+  <!--/Breadcrumbs-->
+  <div class="perforator-background">
     <h2>Перфораторы</h2>
+  </div>
+  <!--Filter-->
+  <section class="filters">
+    <h2 class="filters-title">Фильтр:</h2>
     <form>
-      <aside class="filter-form">
-        <fieldset class="filter-form-title">
-          <legend>Цена:</legend>
-          <div class="filter">Фильтр:</div>
-          <label class="minimally">
-            <input name="minimally" type="text" value="0">
-          </label>
-          <div class="line-price"></div>
-          <label class="maximum">
-            <input name="maximum" type="text" value="30000">
-          </label>
-        </fieldset>
-        <fieldset>
-          <legend>Производители:</legend>
-          <ul class="filter-option">
-            <li>
-              <input class="manufacturers-choice" type="checkbox" id="bosch" checked>
-              <label for="bosch">bosch</label>
-            </li>
-            <li>
-              <input class="manufacturers-choice" type="checkbox" id="interskol">
-              <label for="interskol">интерскол</label>
-            </li>
-            <li>
-              <input class="manufacturers-choice" type="checkbox" id="makita" checked>
-              <label for="makita">makita</label>
-            </li>
-            <li>
-              <input class="manufacturers-choice" type="checkbox" id="dewalt">
-              <label for="dewalt">dewalt</label>
-            </li>
-            <li>
-              <input class="manufacturers-choice" type="checkbox" id="hitachi">
-              <label for="hitachi">hitachi</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Питание:</legend>
-          <ul class="filter-option">
-            <li>
-              <input type="radio" id="adaptive" name="group" checked>
-              <label for="adaptive">аккумуляторные</label>
-            </li>
-            <li>
-              <input type="radio" id="fixed" name="group">
-              <label for="fixed">сетевые</label>
-            </li>
-          </ul>
-          <button class="filter-show" type="submit">показать</button>
-        </fieldset>
-      </aside>
+      <fieldset>
+        <legend>
+          Цена:
+        </legend>
+        <label class="minimally">
+          <input name="minimally" type="text" value="0">
+        </label>
+        <div class="line-price">-</div>
+        <label class="maximum">
+          <input name="maximum" type="text" value="30000">
+        </label>
+      </fieldset>
+      <fieldset class="filter-brands">
+        <legend>
+          Производители:
+        </legend>
+        <ul class="filter-option-list">
+          <li>
+            <input class="manufacturers-choice" type="checkbox" id="bosch" checked>
+            <label for="bosch">bosch</label>
+          </li>
+          <li>
+            <input class="manufacturers-choice" type="checkbox" id="interskol">
+            <label for="interskol">интерскол</label>
+          </li>
+          <li>
+            <input class="manufacturers-choice" type="checkbox" id="makita" checked>
+            <label for="makita">makita</label>
+          </li>
+          <li>
+            <input class="manufacturers-choice" type="checkbox" id="dewalt">
+            <label for="dewalt">dewalt</label>
+          </li>
+          <li>
+            <input class="manufacturers-choice" type="checkbox" id="hitachi">
+            <label for="hitachi">hitachi</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>
+          Питание:
+        </legend>
+        <ul class="filter-option-list">
+          <li>
+            <input type="radio" id="adaptive" name="group" checked>
+            <label for="adaptive">аккумуляторные</label>
+          </li>
+          <li>
+            <input type="radio" id="fixed" name="group">
+            <label for="fixed">сетевые</label>
+          </li>
+        </ul>
+        <button class="filter-show" type="submit">показать</button>
+      </fieldset>
     </form>
   </section>
+  <!--/Filter-->
+  <!--Sort-->
   <section class="catalog-sort">
     <h3>Сортировка:</h3>
-    <ul class="catalog-sort-button">
+    <ul class="catalog-sort-list">
       <li>
         <button class="catalog-sort-price">По цене</button>
       </li>
@@ -136,6 +147,8 @@
       </li>
     </ul>
   </section>
+  <!--/Sort-->
+  <!--Products-->
   <section class="products">
     <div class="products-catalog">
       <article>
@@ -221,20 +234,21 @@
       </div>
     </div>
   </section>
+  <!--/Products-->
+  <!--Description-->
   <section class="description">
     <div class="description-catalog">
       <h2>Пара слов о перфораторах</h2>
       <p>Перфоратор &ndash; универсальный строительный инструмент. Предназначен для сверления и долбления отверстий
-        в
-        кирпиче, бетоне и камне.</p>
-      <p>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции
-        дрели,
-        шуруповерта и отбойного молотка.</p>
-      <p>В ассортиментном ряду есть выбор &laquo;трехрежимников&raquo;: в одном устройстве будут совмещены отбойный
+        в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут
+        выполнять функции
+        дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор &laquo;трехрежимников&raquo;: в одном
+        устройстве будут совмещены отбойный
         молоток и ударная дрель. </p>
     </div>
   </section>
 </main>
+<!--/Description-->
 <!--Footer-->
 <footer class="footer">
   <div class="footer-logo">
@@ -271,5 +285,6 @@
   <p class="footer-developed">Разработано &ndash; <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
   </p>
 </footer>
+<!--/Footer-->
 </body>
 </html>
