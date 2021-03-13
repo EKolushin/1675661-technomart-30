@@ -21,6 +21,7 @@
   --basic-footer-address: #F3F7F9;
   --basic-border-products: #EAEAEA;
 }
+
 /* Global */
 * {
   padding: 0;
@@ -43,8 +44,8 @@ a {
 }
 
 img {
-max-width: 100%;
-height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /*Main header*/
@@ -242,27 +243,27 @@ height: auto;
 }
 
 .header-main-navigation li:hover {
-background-color: var(--basic-dark-blu);
+  background-color: var(--basic-dark-blu);
 }
 
 .header-main-navigation li {
-display: block;
-padding: 21px 30px 21px 30px;
-line-height: 17px;
+  display: block;
+  padding: 21px 30px 21px 30px;
+  line-height: 17px;
 }
 
 .header-main-navigation-active-item {
-display: block;
-padding: 21px 30px 21px 30px;
-line-height: 17px;
+  display: block;
+  padding: 21px 30px 21px 30px;
+  line-height: 17px;
 }
 
 .header-main-navigation li:active {
-background-color: var(--basic-mid-night);
+  background-color: var(--basic-mid-night);
 }
 
 .header-main-navigation a:active {
-color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 /*Category*/
@@ -287,15 +288,15 @@ color: rgba(255, 255, 255, 0.5);
 }
 
 .category-list img {
-  margin: 0px 0 -56px 216px;
+  margin: 0 0 -56px 216px;
 }
 
 .category-list {
   display: grid;
   grid-gap: 20px;
-  grid-template-areas:"a a a a b b b b c c c c"
-                      "d d d d d d d d e e e e"
-                      "d d d d d d d d f f f f";
+  grid-template-areas: "a a a a b b b b c c c c"
+                        "d d d d d d d d e e e e"
+                        "d d d d d d d d f f f f";
   margin-top: 59px;
   margin-bottom: 59px;
 }
@@ -385,6 +386,7 @@ color: rgba(255, 255, 255, 0.5);
   line-height: 24px;
   color: var(--basic-white);
 }
+
 .category-perforators h3 {
   font-size: 36px;
   line-height: 36px;
@@ -589,29 +591,29 @@ color: rgba(255, 255, 255, 0.5);
 }
 
 .services-manage-button-active {
-width: 240px;
-height: 61px;
-border: 1px solid #EAEAEA;
-color: var(--basic-light-blue);
-background-color: var(--basic-white);
+  width: 240px;
+  height: 61px;
+  border: 1px solid #EAEAEA;
+  color: var(--basic-light-blue);
+  background-color: var(--basic-white);
 }
 
 .services-manage-button {
-width: 240px;
-height: 61px;
-border: 1px solid #3e4f6b;
-align-items: center;
-color: #FFFFFF;
-background-color: var(--basic-light-blue);
+  width: 240px;
+  height: 61px;
+  border: 1px solid #3e4f6b;
+  align-items: center;
+  color: #FFFFFF;
+  background-color: var(--basic-light-blue);
 }
 
 .services-title {
-margin-right: 540px;
+  margin-right: 540px;
 }
 
 .services p {
-font-size: 13px;
-font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .services-delivery {
@@ -619,26 +621,26 @@ font-family: "PT Sans", Arial, sans-serif;
 }
 
 .services-content-item p {
-padding-top: 30px;
-font-family: "PT Sans", sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 13px;
-line-height: 24px;
+  padding-top: 30px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 .services h2 {
-margin-top: 64px;
-font-weight: normal;
-font-size: 30px;
-text-transform: uppercase;
+  margin-top: 64px;
+  font-weight: normal;
+  font-size: 30px;
+  text-transform: uppercase;
 }
 
 .services-content-item h3 {
-font-size: 30px;
-line-height: 30px;
-font-weight: normal;
-color: var(--basic-light-blue);
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  color: var(--basic-light-blue);
 }
 
 /*Description*/
@@ -672,18 +674,18 @@ color: var(--basic-light-blue);
 }
 
 .description h2 {
-text-transform: uppercase;
-font-weight: normal;
-font-size: 30px;
-line-height: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
 }
 
 .description p {
-font-family: "PT Sans", sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 13px;
-line-height: 24px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 /*Partner*/
@@ -737,6 +739,7 @@ line-height: 24px;
   margin: 0 auto;
   min-height: 193px;
 }
+
 .footer-wrap2 {
   min-height: 107px;
   background-color: var(--basic-dark-blu);
@@ -750,6 +753,7 @@ line-height: 24px;
   min-height: 107px;
   align-items: center;
 }
+
 .footer-logo {
   width: 220px;
   height: 68px;
