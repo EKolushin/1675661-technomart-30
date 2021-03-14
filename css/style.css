@@ -20,6 +20,7 @@
   --basic-social-button: #212A3A;
   --basic-footer-address: #F3F7F9;
   --basic-border-products: #EAEAEA;
+  --basic-user-checkout-hover: #5FBB2D;
 }
 
 /* Global */
@@ -50,8 +51,7 @@ img {
 
 .container {
   width: 940px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin: 0 auto;
 }
 
 /*Main header*/
@@ -78,12 +78,10 @@ img {
 }
 
 .header-top-line {
-  width: 940px;
   height: 42px;
   display: flex;
   font-size: 18px;
   line-height: 24px;
-  margin: 0 auto;
 }
 
 .header-top {
@@ -97,6 +95,8 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   width: 940px;
   margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .header-top-logo {
@@ -148,13 +148,24 @@ img {
 .header-top-user-navigation {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
   list-style: none;
 }
 
 .header-top-user-link {
-  padding-top: 12px;
-  padding-bottom: 12px;
   width: 150px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+.header-top-user-link:hover {
+  padding-top: 10px;
+  padding-bottom: 8px;
+  width: 150px;
+  background-color: #212a3a;
+  outline: none;
 }
 
 .header-top-user-checkout {
@@ -164,12 +175,19 @@ img {
   text-align: center;
 }
 
+.header-top-user-checkout:hover,
+.header-top-user-checkout:focus {
+  padding-top: 10px;
+  padding-bottom: 8px;
+  background-color: var(--basic-user-checkout-hover);
+  text-align: center;
+}
+
 
 .header-phone {
   padding: 10px 10px 4px;
   font-size: 21px;
   margin-right: 42px;
-  /* line-height: 18px; */
   text-transform: uppercase;
   text-align: center;
   color: var(--basic-red);
@@ -235,8 +253,6 @@ img {
 /*Navigation*/
 .header-main-navigation {
   font-size: 18px;
-  width: 940px;
-  margin: 0 auto;
   line-height: 24px;
   background-color: var(--basic-light-blue);
   box-shadow: inset 0 -5px 0 #293449;
@@ -275,9 +291,6 @@ img {
 .manufactures,
 .category {
   list-style: none;
-  width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
 }
 
 .category-list li {
@@ -439,55 +452,49 @@ img {
 }
 
 .section-header {
-  display: flex;
-  justify-content: space-between;
-  width: 940px;
-  -webkit-box-pack: justify;
+  display: grid;
+  grid-template-columns: 690px 1fr;
   background-color: var(--basic-line);
 }
 
 .section-header h2 {
-  display: flex;
   padding: 30px 0 30px 26px;
   font-weight: normal;
   font-size: 30px;
-  line-height: 30px;
-  color: var(--basic-light-blue);
-  text-transform: uppercase;
 }
 
 .section-header a {
-  width: 192px;
-  display: grid;
-  align-items: center;
-  text-align: center;
-  margin: 25px 24px 27px 0;
-  padding: 11px;
-  text-transform: uppercase;
-  background-color: var(--basic-red);
+width: 192px;
+display: grid;
+align-items: center;
+text-align: center;
+margin: 25px 24px 27px 0;
+padding: 11px;
+text-transform: uppercase;
+background-color: var(--basic-red);
 }
 
 .category-perforators-link-item,
 .description-link {
-  text-transform: uppercase;
-  background-color: var(--basic-red);
-  width: 192px;
-  display: grid;
-  align-items: center;
-  text-align: center;
-  margin: 25px 24px 27px 0;
-  padding: 11px;
+text-transform: uppercase;
+background-color: var(--basic-red);
+width: 192px;
+display: grid;
+align-items: center;
+text-align: center;
+margin: 25px 24px 27px 0;
+padding: 11px;
 }
 
 .description-contacts-link {
-  text-transform: uppercase;
-  background-color: var(--basic-red);
-  width: 279px;
-  display: grid;
-  align-items: center;
-  text-align: center;
-  margin: 25px 24px 27px 0;
-  padding: 11px;
+text-transform: uppercase;
+background-color: var(--basic-red);
+width: 279px;
+display: grid;
+align-items: center;
+text-align: center;
+margin: 25px 24px 27px 0;
+padding: 11px;
 }
 
 /*Popular-products-case*/
@@ -557,15 +564,12 @@ img {
 
 .services-center {
   display: grid;
-  width: 940px;
   min-height: 523px;
-  margin: 0 auto;
 }
 
 .services-tabs {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 940px;
 }
 
 .services-manage-item {
@@ -653,10 +657,8 @@ img {
   display: grid;
   align-items: center;
   grid-template-columns: 460px 300px;
-  grid-gap: 222px;
-  width: 940px;
+  grid-gap: 180px;
   min-height: 496px;
-  margin: 0 auto;
 }
 
 .description-title h2 {
@@ -731,30 +733,25 @@ img {
   background: var(--basic-light-light-blue);
 }
 
-
 /*Footer*/
 
 .footer {
   background-color: var(--basic-light-blue);
 }
 
-.footer-top {
+.footer-top-right-navigation {
   display: flex;
-  width: 940px;
-  margin: 0 auto;
   min-height: 193px;
+  list-style: none;
 }
 
 .footer-bottom {
-  min-height: 107px;
   background-color: var(--basic-dark-blu);
 }
 
 .footer-bottom-grid {
   display: grid;
-  grid-template-columns: 250px 350px 1fr 1fr;
-  width: 940px;
-  margin: 0 auto;
+  grid-template-columns: 250px 350px 1fr;
   min-height: 107px;
   align-items: center;
 }
@@ -768,7 +765,8 @@ img {
 
 .footer-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 340px 600px;
+  grid-gap: 14px;
   min-height: 193px;
 }
 
@@ -802,8 +800,8 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 58px;
-  margin-left: 174px;
   margin-top: 37px;
+  list-style: none;
 }
 
 .footer-navigation-category-list {
@@ -811,7 +809,8 @@ img {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 58px;
   margin-top: 34px;
-  margin-left: 196px;
+  margin-left: 63px;
+  list-style: none;
 }
 
 .footer-navigation ul {
@@ -850,7 +849,7 @@ img {
   grid-template-columns: 1fr 1fr;
   grid-gap: 51px;
   list-style: none;
-  margin-left: 90px;
+  margin-left: 55px;
 }
 
 .footer-mail,
@@ -906,12 +905,6 @@ img {
 }
 
 /*Catalog container*/
-
-.container {
-  width: 960px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
 
 .breadcrumbs-list-item {
   position: relative;
