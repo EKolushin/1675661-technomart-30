@@ -912,6 +912,7 @@ img {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 58px;
   margin-top: 37px;
+  margin-left: 58px;
   list-style: none;
 }
 
@@ -920,7 +921,7 @@ img {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 58px;
   margin-top: 34px;
-  margin-left: 63px;
+  margin-left: 82px;
   list-style: none;
 }
 
@@ -999,6 +1000,18 @@ img {
   color: var(--basic-yelowe);
 }
 
+.footer-mail :hover,
+.footer-developed :hover {
+  text-decoration: underline;
+}
+
+.footer-mail a:active,
+.footer-developed a:active {
+  text-decoration: none;
+  color: var(--basic-red);
+}
+
+
 .footer-socials-item {
   display: grid;
   justify-content: center;
@@ -1007,6 +1020,12 @@ img {
   height: 44px;
   background-color: #212a3a;
   border-radius: 50%;
+}
+
+.footer-socials-item:hover,
+.footer-socials-item:focus,
+.footer-socials-item:active {
+  background-color: var(--basic-red);
 }
 
 
