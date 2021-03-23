@@ -139,6 +139,11 @@ img {
   grid-template-columns: 1fr;
 }
 
+.header-top-search input:hover {
+  background-color: var(--basic-mid-night);
+  outline: none;
+}
+
 .header-top-search input[type="text"] {
   font-family: "Cuprum", "Times New Roman", sans-serif;
   font-style: normal;
@@ -173,7 +178,7 @@ img {
 }
 
 .header-top-user-link:hover {
-  background-color: #212a3a;
+  background-color: var(--basic-mid-night);
   outline: none;
 }
 
@@ -1102,8 +1107,20 @@ img {
 }
 
 .breadcrumbs-list-item {
+
+}
+.breadcrumbs-list-item::after,
+.breadcrumbs-list-item a::after {
   position: relative;
   margin-left: 41px;
+  position: absolute;
+  top: 2px;
+  left: -25px;
+  display: block;
+  width: 8px;
+  height: 12px;
+  background: url(../img/Shape.svg) no-repeat top left;
+  content: '';
 }
 
 .breadcrumbs,
@@ -1151,6 +1168,13 @@ img {
   text-transform: uppercase;
   background-color: #F7F3EC;
   padding: 5px 10px;
+}
+
+.filters-form-price {
+  padding: 0;
+  border: none;
+  margin: 0 0 25px;
+
 }
 
 .minimally {
